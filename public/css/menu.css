@@ -1,0 +1,53 @@
+body {
+  margin: 0px;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #5C3D2E;
+}
+
+.menu-carousel {
+  padding: 3% 10%;
+}
+
+.prev-button {
+  background-color: black;
+  height: 5%;
+}
+
+.next-button {
+  background-color: black;
+  height: 5%;
+}
+
+#menu-item {
+  padding: 3% 0%;
+  border: 3px solid black;
+  margin: 4% 2%;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.product-heading {
+  font-family: 'Markazi Text', serif;
+  color: #753422;
+  padding: 0% 0% 1%;
+}
+
+.cart {
+  background-color: #fff;
+  border-style: none;
+  margin: 0% 0% 0% 90%;
+  padding: 3% 2% 0%;
+  color: grey;
+}
+
+.cart:hover,
+.cart:active,
+.cart:focus {
+  outline: 5px #fff;
+}

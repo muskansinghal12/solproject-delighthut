@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>delight hut</title>
+
+  <!--bootstrap js files-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+  <!--navbar-->
+  <section id="nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <a class="brand navbar-brand" href="#"><span class="letter">d</span>elight <span class="letter">h</span>ut</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="list-item nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="list-item nav-item"><a class="nav-link" href="/menu">Menu</a></li>
+        <li class="list-item nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <button type="button" class="cart" data-toggle="modal" data-target="#staticBackdrop">
+    <i class="fas fa-shopping-cart fa-3x"></i>
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Cart</h5>
+          <button type="button" class="cart close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <table class="modal-body">
+        </table>
+        <div class="modal-footer">
+          <table class="price">
+          </table>
+          <br>
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <form class="order-form" method="post">
+            <input type="hidden" class="purchased-item" name="purchaseditem">
+            <input type="hidden" class="amount" name="amount">
+            <button type="submit" class="btn btn-success order-now">Order Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1>Our Menu</h1>
+  <section id="menu-item">
+    <h3 class="product-heading">CAKES</h3>
+    <div id="cakes-carousal" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="menu-carousel carousel-item active">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cakes/butter-scotch-cake.jpg" class="card-img-top" alt="butter-scotch">
+                <div class="card-body">
+                  <h5 class="card-title">Butter Scotch Cake</h5>
+                  <h6 class="card-price">Rs. 800</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success butter-scotch-cake" name="Butter Scotch cake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cakes/red-velvet-cake.jpg" class="card-img-top" alt="red-velvet">
+                <div class="card-body">
+                  <h5 class="card-title">Red Velvet Cake</h5>
+                  <h6 class="card-price">Rs. 1200</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success red-velvet-cake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cakes/pineapple-cake.jpg" class="card-img-top" alt="pineapple">
+                <div class="card-body">
+                  <h5 class="card-title">Pineapple Cake</h5>
+                  <h6 class="card-price">Rs. 650</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success pineapple-cake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cakes/vanilla-cake.jpg" class="card-img-top" alt="vanilla">
+                <div class="card-body">
+                  <h5 class="card-title">Vanilla Cake</h5>
+                  <h6 class="card-price">Rs. 600</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success vanilla-cake">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="menu-carousel carousel-item">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cakes/truffle-cake.jpg" class="card-img-top" alt="truffle">
+                <div class="card-body">
+                  <h5 class="card-title">Truffle Cake</h5>
+                  <h6 class="card-price">Rs. 900</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success truffle-cake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cakes/chocochip-cake.jpg" class="card-img-top" alt="ChocoChip">
+                <div class="card-body">
+                  <h5 class="card-title">ChocoChip Cake</h5>
+                  <h6 class="card-price">Rs. 800</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success chocochip-cake">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cakes/fruit-cake.jpg" class="card-img-top" alt="fruit">
+                <div class="card-body">
+                  <h5 class="card-title">Fruit Cake</h5>
+                  <h6 class="card-price">Rs. 1000</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success fruit-cake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cakes/blackforest-cake.jpg" class="card-img-top" alt="black-forest">
+                <div class="card-body">
+                  <h5 class="card-title">Black Forest Cake</h5>
+                  <h6 class="card-price">Rs. 700</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success blackforest-cake">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#cakes-carousal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon prev-button"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#cakes-carousal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon next-button"></span>
+      </a>
+    </div>
+  </section>
+
+
+
+
+  <!--Cupcakes-->
+
+  <section id="menu-item">
+    <h3 class="product-heading">CUPCAKES</h3>
+    <div id="cupcakes-carousal" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="menu-carousel carousel-item active">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cupcakes/apple-cupcake.png" class="card-img-top" alt="Apple-pie">
+                <div class="card-body">
+                  <h5 class="card-title">Apple Pie CupCake</h5>
+                  <h6 class="card-price">Rs. 50</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success apple-cupcake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cupcakes/red-velvet-cupcake.jpg" class="card-img-top" alt="red-velvet">
+                <div class="card-body">
+                  <h5 class="card-title">Red Velvet CupCake</h5>
+                  <h6 class="card-price">Rs. 70</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success red-velvet-cupcake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cupcakes/lemon-cupcake.jpg" class="card-img-top" alt="lemon">
+                <div class="card-body">
+                  <h5 class="card-title">Lemon CupCake</h5>
+                  <h6 class="card-price">Rs. 55</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success lemon-cupcake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cupcakes/vanilla-cupcake.jpg" class="card-img-top" alt="vanilla">
+                <div class="card-body">
+                  <h5 class="card-title">Vanilla CupCake</h5>
+                  <h6 class="card-price">Rs. 40</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success vanilla-cupcake">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="menu-carousel carousel-item">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cupcakes/chocolate-cupcake.jpg" class="card-img-top" alt="chocolate">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate CupCake</h5>
+                  <h6 class="card-price">Rs. 50</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success chocolate-cupcake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cupcakes/strawberry-cupcake.jpg" class="card-img-top" alt="strawberry">
+                <div class="card-body">
+                  <h5 class="card-title">Strawberry CupCake</h5>
+                  <h6 class="card-price">Rs. 55</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success strawberry-cupcake">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cupcakes/orange-creme-cupcake.jpg" class="card-img-top" alt="orange-creme">
+                <div class="card-body">
+                  <h5 class="card-title">Orange Creme CupCake</h5>
+                  <h6 class="card-price">Rs. 50</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success orange-creme-cupcake">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cupcakes/blackberry-cupcake.jpg" class="card-img-top" alt="blackberry">
+                <div class="card-body">
+                  <h5 class="card-title">BlackBerry Coconut CupCake</h5>
+                  <h6 class="card-price">Rs. 60</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success blackberry-cupcake">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#cupcakes-carousal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon prev-button"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#cupcakes-carousal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon next-button"></span>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!--cookies-->
+  <section id="menu-item">
+    <h3 class="product-heading">COOKIES</h3>
+    <div id="cookies-carousal" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="menu-carousel carousel-item active">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cookies/chocochip-cookie.jpg" class="card-img-top" alt="Chocolate-chip">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Chip Cookie</h5>
+                  <h6 class="card-price">Rs. 100/Packet</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success chocochip-cookie">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cookies/gingersnap-cookie.jpg" class="card-img-top" alt="gingersnap">
+                <div class="card-body">
+                  <h5 class="card-title">GingerSnap Cookie</h5>
+                  <h6 class="card-price">Rs. 120/Packet</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success gingersnap-cookie">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cookies/oatmeal-raisin-cookie.jpg" class="card-img-top" alt="oatmeal-raisin">
+                <div class="card-body">
+                  <h5 class="card-title">Oatmeal Raisin Cookie</h5>
+                  <h6 class="card-price">Rs. 200/Packet</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success oatmeal-raisin-cookie">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cookies/peanut-butter-cookie.jpg" class="card-img-top" alt="peanut-butter">
+                <div class="card-body">
+                  <h5 class="card-title">Peanut Butter Cookie</h5>
+                  <h6 class="card-price">Rs. 130/Packet</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success peanut-butter-cookie">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="menu-carousel carousel-item">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cookies/red-velvet-cookie.jpg" class="card-img-top" alt="red-velvet">
+                <div class="card-body">
+                  <h5 class="card-title">Red Velvet Cookie</h5>
+                  <h6 class="card-price">Rs. 190/Packet</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success red-velvet-cookie">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cookies/sandwich-cookie.jpg" class="card-img-top" alt="sandwich">
+                <div class="card-body">
+                  <h5 class="card-title">Sandwich Cookie</h5>
+                  <h6 class="card-price">Rs. 170/Packet</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success sandwich-cookie">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cookies/shortbread-cookie.jpg" class="card-img-top" alt="shortbread">
+                <div class="card-body">
+                  <h5 class="card-title">ShortBread Cookie</h5>
+                  <h6 class="card-price">Rs. 110/Packet</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success shortbread-cookie">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/cookies/thumbprint-cookie.jpg" class="card-img-top" alt="thumbprint">
+                <div class="card-body">
+                  <h5 class="card-title">ThumbPrint Cookie</h5>
+                  <h6 class="card-price">Rs. 120/Packet</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success thumbprint-cookie">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#cookies-carousal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon prev-button"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#cookies-carousal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon next-button"></span>
+      </a>
+    </div>
+  </section>
+
+
+  <!--Pastries-->
+  <section id="menu-item">
+    <h3 class="product-heading">PASTRIES</h3>
+    <div id="pastries-carousal" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="menu-carousel carousel-item active">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/pastries/butter-scotch-pastry.jpg" class="card-img-top" alt="butter-scotch">
+                <div class="card-body">
+                  <h5 class="card-title">Butter Scotch Pastry</h5>
+                  <h6 class="card-price">Rs. 80</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success butter-scotch-pastry">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/pastries/red-velvet-pastry.jpg" class="card-img-top" alt="red-velvet">
+                <div class="card-body">
+                  <h5 class="card-title">Red Velvet Pastry</h5>
+                  <h6 class="card-price">Rs. 120</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success red-velvet-pastry">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/pastries/pineapple-pastry.jpg" class="card-img-top" alt="pineapple">
+                <div class="card-body">
+                  <h5 class="card-title">Pineapple Pastry</h5>
+                  <h6 class="card-price">Rs. 65</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success pineapple-pastry">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/pastries/vanilla-pastry.jpg" class="card-img-top" alt="vanilla">
+                <div class="card-body">
+                  <h5 class="card-title">Vanilla Pastry</h5>
+                  <h6 class="card-price">Rs. 60</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success vanilla-pastry">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="menu-carousel carousel-item">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/pastries/truffle-pastry.jpg" class="card-img-top" alt="truffle">
+                <div class="card-body">
+                  <h5 class="card-title">Truffle Pastry</h5>
+                  <h6 class="card-price">Rs. 90</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success truffle-pastry">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/pastries/chocochip-pastry.jpg" class="card-img-top" alt="ChocoChip">
+                <div class="card-body">
+                  <h5 class="card-title">ChocoChip Pastry</h5>
+                  <h6 class="card-price">Rs. 80</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success chocochip-pastry">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/pastries/fruit-pastry.jpg" class="card-img-top" alt="fruit">
+                <div class="card-body">
+                  <h5 class="card-title">Fruit Pastry</h5>
+                  <h6 class="card-price">Rs. 100</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success fruit-pastry">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/pastries/blackforest-pastry.jpg" class="card-img-top" alt="black-forest">
+                <div class="card-body">
+                  <h5 class="card-title">Black Forest Pastry</h5>
+                  <h6 class="card-price">Rs. 70</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success blackforest-pastry">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#pastries-carousal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon prev-button"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#pastries-carousal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon next-button"></span>
+      </a>
+    </div>
+  </section>
+
+
+
+
+  <!--donuts-->
+  <section id="menu-item">
+    <h3 class="product-heading">DONUTS</h3>
+    <div id="donuts-carousal" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="menu-carousel carousel-item active">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/donuts/blueberry-donut.jpg" class="card-img-top" alt="blueberry">
+                <div class="card-body">
+                  <h5 class="card-title">Blueberry Donut</h5>
+                  <h6 class="card-price">Rs. 65/piece</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success blueberry-donut">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/donuts/chocolate-hazelnut-donut.jpg" class="card-img-top" alt="chocolate-hazelnut">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Hazelnut Donut</h5>
+                  <h6 class="card-price">Rs. 70/piece</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success chocolate-hazelnut-donut">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/donuts/chocolate-iced-donut.jpg" class="card-img-top" alt="chocolate-iced">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Iced Donut</h5>
+                  <h6 class="card-price">Rs. 65/piece</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success chocolate-iced-donut">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/donuts/coconut-donut.png" class="card-img-top" alt="Coconut">
+                <div class="card-body">
+                  <h5 class="card-title">Coconut Donut</h5>
+                  <h6 class="card-price">Rs. 60/piece</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success coconut-donut">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="menu-carousel carousel-item">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/donuts/coffee-roll-donut.jpg" class="card-img-top" alt="Coffee-roll">
+                <div class="card-body">
+                  <h5 class="card-title">Coffee Roll Donut</h5>
+                  <h6 class="card-price">Rs. 75/piece</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success coffee-roll-donut">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/donuts/red-velvet-donut.jpg" class="card-img-top" alt="red-velvet">
+                <div class="card-body">
+                  <h5 class="card-title">Red Velvet Donut</h5>
+                  <h6 class="card-price">Rs. 90/piece</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success red-velvet-donut">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/donuts/strawberry-iced-donut.jpg" class="card-img-top" alt="strawberry-iced">
+                <div class="card-body">
+                  <h5 class="card-title">Strawberry Iced Donut</h5>
+                  <h6 class="card-price">Rs. 55/piece</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success strawberry-iced-donut">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/donuts/vanilla-donut.jpg" class="card-img-top" alt="vanilla">
+                <div class="card-body">
+                  <h5 class="card-title">Vanilla Donut</h5>
+                  <h6 class="card-price">Rs. 50/piece</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success vanilla-donut">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#donuts-carousal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon prev-button"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#donuts-carousal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon next-button"></span>
+      </a>
+    </div>
+  </section>
+
+  <!--cake jars-->
+  <section id="menu-item">
+    <h3 class="product-heading">CAKE JARS</h3>
+    <div id="jars-carousal" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="menu-carousel carousel-item active">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/jars/butter-scotch-jar.jpg" class="card-img-top" alt="butter-scotch">
+                <div class="card-body">
+                  <h5 class="card-title">Butter Scotch Cake Jar</h5>
+                  <h6 class="card-price">Rs. 400</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success butter-scotch-jar">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/jars/chocochip-jar.jpg" class="card-img-top" alt="chocochip-jar">
+                <div class="card-body">
+                  <h5 class="card-title">Chocochip Cake Jar</h5>
+                  <h6 class="card-price">Rs. 420</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success chocochip-jar">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/jars/strawberry-jar.jpg" class="card-img-top" alt="strawberry">
+                <div class="card-body">
+                  <h5 class="card-title">Strawberry Cake Jar</h5>
+                  <h6 class="card-price">Rs. 350</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success strawberry-jar">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/jars/pineapple-jar.jpg" class="card-img-top" alt="Pineapple">
+                <div class="card-body">
+                  <h5 class="card-title">Pineapple Cake Jar</h5>
+                  <h6 class="card-price">Rs. 320</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success pineapple-jar">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="menu-carousel carousel-item">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/jars/chocolate-jar.jpg" class="card-img-top" alt="chocolate-jar">
+                <div class="card-body">
+                  <h5 class="card-title">Chocolate Cake Jar</h5>
+                  <h6 class="card-price">Rs. 370</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success chocolate-jar">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/jars/red-velvet-jar.jpg" class="card-img-top" alt="red-velvet">
+                <div class="card-body">
+                  <h5 class="card-title">Red Velvet Cake Jar</h5>
+                  <h6 class="card-price">Rs. 500</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success red-velvet-jar">
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/jars/oreo-jar.jpg" class="card-img-top" alt="oreo">
+                <div class="card-body">
+                  <h5 class="card-title">Oreo Cake Jar</h5>
+                  <h6 class="card-price">Rs. 450</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success oreo-jar">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card" style="width: 18rem;">
+                <img src="images/menu/jars/rasmalai-jar.jpg" class="card-img-top" alt="rasmalai">
+                <div class="card-body">
+                  <h5 class="card-title">Rasmallai Cake Jar</h5>
+                  <h6 class="card-price">Rs. 420</h6>
+                  <input type="button" value="Add to Cart" class="btn btn-success rasmalai-jar">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#jars-carousal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon prev-button"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#jars-carousal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon next-button"></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="footer" class="navbar-dark bg-secondary">
+    <div class="row">
+      <div class="col-lg-4 ">
+        <a href="/" class="brand footer-link"><span class="letter">d</span>elight <span class="letter">h</span>ut</a>
+        <p class="footer-text" style="font-size: 1.1rem;padding-left:7%;">The Home Of </p>
+        <p class="footer-text" style="font-size: 1.1rem;line-height:0;padding-left:7%;">Fresh Baking</p>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="footer-text" style="padding-left:7.5%;">Quick Links</h3>
+        <ul class="list">
+          <li><a class="footer-link" href="/">Home</a></li>
+          <li><a class="footer-link" href="/menu">Menu</a></li>
+          <li><a class="footer-link" href="/contact">Contact Us</a></li>
+      </div>
+
+      <div class="col-lg-4">
+        <h3 class="footer-text">Contact</h3>
+        <a class="footer-link" href="#"><i class="footer-icon fab fa-facebook-square fa-3x"></i></a>
+        <a class="footer-link" href="#"><i class="footer-icon fab fa-twitter-square fa-3x"></i></a>
+        <a class="footer-link" href="#"><i class="footer-icon fab fa-instagram fa-3x"></i></a>
+        <a class="footer-link" href="#"><i class="footer-icon fab fa-linkedin fa-3x"></i></a>
+      </div>
+    </div>
+    </div>
+    <p class="copyright">Copyright ©2021 All rights reserved | This Website is made by Muskan Singhal
+  </section>
+  <script src="javascript/menu.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

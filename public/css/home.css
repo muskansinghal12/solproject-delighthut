@@ -1,0 +1,159 @@
+/*carousel*/
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5%;
+  font-family: 'Markazi Text', serif;
+  color: #753422;
+}
+
+.imgSlide {
+  height: 35rem;
+  width;
+  100%;
+}
+
+.car-item {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#image-slider {
+  opacity: 60%;
+}
+
+/*features*/
+#features {
+  margin: auto;
+  padding: 7% 15%;
+}
+
+.feature-col {
+  text-align: center;
+  padding: 3%;
+}
+
+.icon {
+  padding: 3% 2% 7%;
+  color: #865439;
+}
+
+.icon:hover {
+  color: #B05B3B;
+}
+
+.feature-description {
+  color: #B85C38;
+}
+
+.feature-heading {
+  color: #865439;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+/*products*/
+#products {
+  padding: 7% 15%;
+  background-color: #FFEACA;
+}
+
+.outer {
+  position: absolute;
+}
+
+.inner {
+  position: relative;
+  padding: 40% 30%;
+  color: #FFEACA;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-img-top {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.product-card {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.button-explore {
+  border-radius: 50px;
+  background-color: #B05B3B;
+  border-color: #B05B3B;
+}
+
+.product-button {
+  padding: 0% 40%;
+}
+
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:visited,
+.btn-danger:focus {
+  background-color: #865439;
+  border-color: #865439;
+}
+
+/*story*/
+#story {
+  font-size: 1.1rem;
+  padding: 7% 0%;
+}
+
+.story-row {
+  width: 50%;
+  margin: 60px auto 60px auto;
+  text-align: left;
+  line-height: 2;
+  color: #865439;
+}
+
+.story-img-left {
+  width: 40%;
+  float: left;
+  margin-right: 60px;
+}
+
+.story-img-right {
+  width: 40%;
+  float: right;
+  margin-left: 60px;
+}
+
+.story-img {
+  height: 12rem;
+  width: 20rem;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+/*testimonials*/
+#testimonials {
+  background-color: #FFEACA;
+  text-align: center;
+  color: #C68B59;
+  padding: 7% 0%;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.testimonial-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-item {
+  padding: 0% 15%;
+}

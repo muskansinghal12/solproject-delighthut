@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>delight hut</title>
+  <!--bootstrap js files-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@600&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+
+</head>
+
+<body>
+  <!--navbar-->
+  <section id="nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <a class="brand navbar-brand" href="#"><span class="letter">d</span>elight <span class="letter">h</span>ut</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="list-item nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="list-item nav-item"><a class="nav-link" href="/menu">Menu</a></li>
+        <li class="list-item nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!--carousel-->
+  <section id="image-slider">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-bs-interval="500">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="car-item col-4">
+              <img src="images/homeCarousels/donut-carousel.jpg" class="imgSlide d-block w-100" alt="donut-image">
+            </div>
+            <div class="car-item col-4">
+              <img src="images/homeCarousels/pastry-carousel.jpg" class="imgSlide d-block w-100" alt="pastry-image">
+            </div>
+            <div class="car-item col-4">
+              <img src="images/homeCarousels/cupcake-carousel.jpg" class="imgSlide d-block w-100" alt="cupcake-image">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="car-item col-4">
+              <img src="images/homeCarousels/jar-carousel.jpg" class="imgSlide d-block w-100" alt="jar-image">
+            </div>
+            <div class="car-item col-4">
+              <img src="images/homeCarousels/cake-carousel.jpg" class="imgSlide d-block w-100" alt="cake-image">
+            </div>
+            <div class="car-item col-4">
+              <img src="images/homeCarousels/cookie-carousel.jpg" class="imgSlide d-block w-100" alt="cookie-image">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="features">
+    <h2> OUR FEATURES </h2>
+    <div class="row">
+      <div class="feature-col col-lg-4">
+        <i class="icon fas fa-motorcycle fa-6x"></i>
+        <h4 class="feature-heading">Home Delivery Available</h4>
+        <em>
+          <p class="feature-description">Order will be reached to Your Doorstep within one hour and Delivery is free on all orders above Rs. 2000.</p>
+        </em>
+      </div>
+      <div class="feature-col col-lg-4 ">
+        <i class="icon fas fa-utensils fa-6x"></i>
+        <h4 class="feature-heading">Hygenic And Fresh</h4>
+        <em>
+          <p class="feature-description">All the baked items are fresh and hygenic and prepared by using high quality ingredients.</p>
+        </em>
+      </div>
+      <div class="feature-col col-lg-4 ">
+
+        <i class="icon fas fa-percent fa-6x"></i>
+        <h4 class="feature-heading">Discounts and Coupons</h4>
+        <em>
+          <p class="feature-description">Heavy Discounts are available on all the items. Monthly coupons are also available.</p>
+        </em>
+      </div>
+    </div>
+  </section>
+  <!--Our Products-->
+
+  <section id="products">
+    <h2>OUR PRODUCTS</h2>
+    <div class="row">
+      <div class="col-lg-4 product-card">
+        <a href="/menu" style="text-decoration:none">
+          <div id="carouselExampleFade" class="carousel carousel-fade" data-ride="carousel">
+            <div class="outer">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/cake1-product-carousel.jpg" class="card-img-top" alt="cake-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cake2-product-carousel.jpg" class="card-img-top" alt="cake-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cake3-product-carousel.jpg" class="card-img-top" alt="cake-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cake4-product-carousel.jpg" class="card-img-top" alt="cake-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cake5-product-carousel.jpg" class="card-img-top" alt="cake-image">
+                </div>
+              </div>
+            </div>
+            <div class="inner">
+              <p>Cakes</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 product-card">
+        <a href="/menu" style="text-decoration:none">
+          <div id="carouselExampleFade" class="carousel carousel-fade" data-ride="carousel">
+            <div class="outer">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/cupcake-product-carousel.jpg" class="card-img-top" alt="cupcake-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cupcake2-product-carousel.jpg" class="card-img-top" alt="cupcake-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cupcake3-product-carousel.jpg" class="card-img-top" alt="cupcake-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cupcake4-product-carousel.jpg" class="card-img-top" alt="cupcake-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cupcake5-product-carousel.jpg" class="card-img-top" alt="cupcake-image">
+                </div>
+              </div>
+            </div>
+            <div class="inner">
+              <p>CupCakes</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 product-card">
+        <a href="/menu" style="text-decoration:none">
+          <div id="carouselExampleFade" class="carousel carousel-fade" data-ride="carousel">
+            <div class="outer">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/pastry2-product-carousel.jpg" class="card-img-top" alt="pastry-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pastry3-product-carousel.jpg" class="card-img-top" alt="pastry-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pastry4-product-carousel.jpg" class="card-img-top" alt="pastry-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/pastry5-product-carousel.jpg" class="card-img-top" alt="pastry-image">
+                </div>
+              </div>
+            </div>
+            <div class="inner">
+              <p>Pastries</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 product-card">
+        <a href="/menu" style="text-decoration:none">
+          <div id="carouselExampleFade" class="carousel carousel-fade" data-ride="carousel">
+            <div class="outer">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/donut2-product-carousel.jpg" class="card-img-top" alt="donut-image">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/products/donut3-product-carousel.jpg" class="card-img-top" alt="donut-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/donut1-product-carousel.jpg" class="card-img-top" alt="donut-image">
+                </div>
+
+                <div class="carousel-item">
+                  <img src="images/products/donut4-product-carousel.jpg" class="card-img-top" alt="donut-image">
+                </div>
+              </div>
+            </div>
+            <div class="inner">
+              <p>Donuts</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 product-card">
+        <a href="/menu" style="text-decoration:none">
+          <div id="carouselExampleFade" class="carousel carousel-fade" data-ride="carousel">
+            <div class="outer">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/cakejar1-product-carousel.jpg" class="card-img-top" alt="jar-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cakejar2-product-carousel.jpg" class="card-img-top" alt="jar-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cakejar3-product-carousel.jpg" class="card-img-top" alt="jar-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cakejar4-product-carousel.jpg" class="card-img-top" alt="jar-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cakejar5-product-carousel.jpg" class="card-img-top" alt="jar-image">
+                </div>
+              </div>
+            </div>
+            <div class="inner">
+              <p>Cake Jars</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 product-card">
+        <a href="/menu" style="text-decoration:none">
+          <div id="carouselExampleFade" class="carousel carousel-fade" data-ride="carousel">
+            <div class="outer">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/products/cookie4-product-carousel.jpg" class="card-img-top" alt="cookie-image">
+                </div>
+                <div class="carousel-item ">
+
+                  <img src="images/products/cookie3-product-carousel.jpg" class="card-img-top" alt="cookie-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cookie1-product-carousel.jpg" class="card-img-top" alt="cookie-image">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/products/cookie2-product-carousel.jpeg" class="card-img-top" alt="cookie-image">
+                </div>
+
+              </div>
+            </div>
+            <div class="inner">
+              <p>Cookies</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <a href="/menu" class="product-button"><button type="button" class="button-explore btn btn-danger btn-lg">Check More</button></a>
+  </section>
+
+  <!--story-->
+  <section id="story">
+    <h2>OUR STORY</h2>
+    <div class="story-row">
+      <img src="images/story/bakery1.jpg" class="story-img story-img-left" alt="shop-img">
+      <em>
+        <p>
+          Delight hut bakery is a feast for senses.The aroma of freshly baked items tantalize the nose.
+          After Taking bite of any item comples you to spend more money and never forget the taste of any bite.
+        </p>
+      </em>
+    </div>
+    <div class="story-row">
+      <img src="images/story/bakery2.jpg" class="story-img story-img-right" alt="shop-img">
+      <em>
+        <p>Family owned and operated bakery shop specializes in a unique style of baking and
+          we are serving our customers with mouth-watering cakes,cookies,cupcakes etc since many years.
+        </p>
+      </em>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="testimonials">
+    <h2>WHAT OUR CUSTOMERS SAY</h2>
+    <div id="testmonials-carousal" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="testimonial-item carousel-item active">
+          <h3 class="testimonial-text">We absolutely loved our cupcake cakes!!! The decorations were amazing and most importantly they tasted great! We will be coming back for all our cake needs!</h3>
+          <img class="testimonial-img" src="images/testimonial-images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="testimonial-item carousel-item">
+          <h3 class="testimonial-text">
+            My granddaughter was the lucky little girl that had the unicorn cake today for her birthday!!! The rainbow cake was amazing and the icing was delicious!!!!</h3>
+          <img class="testimonial-img" src="images/testimonial-images/cat.jpg" alt="cat-image">
+          <em>Beverly, Illinois</em>
+        </div>
+        <div class="testimonial-item carousel-item">
+          <h3 class="testimonial-text">Just want to say thank you for a wonderful job in making the cake I ordered. It looks really nice and it was very tasty. I was really pleased how it turned out and everyone enjoyed it. Thank You!!!</h3>
+          <img class="testimonial-img" src="images/testimonial-images/pup.jpg" alt="puppy-image">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#testmonials-carousal" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+
+      </a>
+      <a class="carousel-control-next" href="#testmonials-carousal" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="footer" class="navbar-dark bg-secondary">
+    <div class="row">
+      <div class="col-lg-4 ">
+        <a href="/" class="brand footer-link"><span class="letter">d</span>elight <span class="letter">h</span>ut</a>
+        <p class="footer-text" style="font-size: 1.1rem;padding-left:7%;">The Home Of </p>
+        <p class="footer-text" style="font-size: 1.1rem;line-height:0;padding-left:7%;">Fresh Baking</p>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="footer-text" style="padding-left:7.5%;">Quick Links</h3>
+        <ul class="list">
+          <li><a class="footer-link" href="#">Home</a></li>
+          <li><a class="footer-link" href="/menu">Menu</a></li>
+          <li><a class="footer-link" href="/contact">Contact Us</a></li>
+
+      </div>
+
+      <div class="col-lg-4">
+        <h3 class="footer-text">Contact</h3>
+        <a class="footer-link" href="#"><i class="footer-icon fab fa-facebook-square fa-3x"></i></a>
+        <a class="footer-link" href="#"><i class="footer-icon fab fa-twitter-square fa-3x"></i></a>
+        <a class="footer-link" href="#"><i class="footer-icon fab fa-instagram fa-3x"></i></a>
+        <a class="footer-link" href="#"><i class="footer-icon fab fa-linkedin fa-3x"></i></a>
+      </div>
+    </div>
+    </div>
+    <p class="copyright">Copyright ©2021 All rights reserved | This Website is made by Muskan Singhal
+  </section>
+
+
+
+
+
+</body>
+
+</html>

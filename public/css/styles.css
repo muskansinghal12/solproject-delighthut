@@ -1,0 +1,41 @@
+#title {
+  background-color: #FFEBC9;
+  position: relative;
+}
+
+.heading {
+  padding: 10% 5% 10% 10%;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: 'Charm', cursive;
+  font-weight: bold;
+  padding-bottom: 5%;
+  color: #865439;
+}
+
+.change-style {
+  color: #753422;
+  font-size: 9rem;
+}
+
+.button-explore {
+  border-radius: 50px;
+  background-color: #B05B3B;
+  border-color: #B05B3B;
+}
+
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:visited,
+.btn-danger:focus {
+  background-color: #865439;
+  border-color: #865439;
+}
+
+.cake-img {
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 300%;
+}

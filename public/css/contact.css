@@ -1,0 +1,35 @@
+#form {
+  padding: 7% 5%;
+  position: relative;
+}
+
+.back-img {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  opacity: 15%;
+}
+
+.contact-icon {
+  float: left;
+  margin-right: 7px;
+}
+
+.contact-container {
+  padding-top: 5%;
+  color: #D79771;
+}
+
+.contact-container h5 {
+  color: #B05B3B;
+}
+
+.contact {
+  padding: 3% 0% 3% 10%;
+}
+
+.contact-heading {
+  color: #B85C38;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
